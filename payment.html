@@ -251,6 +251,17 @@
           window.location.href = "./settings.html";
         });
       }
+
+      <script>
+    document.body.addEventListener("click", function(e) {
+        if (e.target.matches("#paymentContainer")) {
+            window.location.href = "./payment.html";
+        } else if (e.target.matches("#settingsContainer")) {
+            window.location.href = "./settings.html";
+        }
+    });
+    </script>
+    
       </script>
   </body>
 </html>
